@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hari - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Hari</div>
+    <nav class="nav-action">
+      <div id="theme-toggle" class="theme-toggle" role="button" tabindex="0" aria-pressed="false">🌙</div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <h1>Hello - I build things with JavaScript</h1>
+      <p>I am Master of front-end web development. Every day I Joyfully spend 2 focused hours learnning practicing, and building my own projectss.</p>
+    </section>
+
+    <section id="projects-section" class="projects-section">
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-tag="all">All</button>
+        <button class="filter-btn" data-tag="web">Web Apps</button>
+        <button class="filter-btn" data-tag="game">Games</button>
+        <button class="filter-btn" data-tag="UI">UI</button>
+      </div>
+
+      <div id="projects" class="projects-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <form id="contactForm" novalidate>
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required>
+          <small class="error" aria-hidden="true"></small>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+          <small class="error" aria-hidden="true"></small>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="4" required></textarea>
+          <small class="error" aria-hidden="true"></small>
+        </label>
+        <button type="submit">Send</button>
+        <div id="form-status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+  
+  <script src="js/projects.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- what is section?
+what is header why?
+what is attribute data-tag in button
+what is aria-live="polite" in div attribute
+what is span
+what is aria-live
+what is a form use of -->
